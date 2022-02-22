@@ -1,0 +1,121 @@
+# K3S seting file
+multiCameraLogicalXMLFile=vili.xml
+
+# SAT
+isZoomRatioSupported=TRUE
+isSwitchAnimationSupported=FALSE
+VideoHdrAvailableConfigurations=hdr10plus:4k@30|hdr10plus:4k@60|hdr10:8k@24|hdr10:8k@30
+videoSATSupportedRange=0x03
+maxDigitalZoom=10.0
+enablePostZoomFOV=1
+isPhyicalMultiCameraSupported=TRUE
+isSwitchAnimationSupported=TRUE
+
+pdafHWEnable=TRUE
+bokehRelightVerion=2
+bokehVendorID=0
+ismfnrbokehsupported=TRUE
+colorBokehVersion=0
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoFilterSupported=TRUE
+superVideoFilterVersion=1
+AIEnhancementVersion=2
+AIEnhancementVideoSupportVersion=1
+isVideoColorRetentionBackSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+multiCameraHWSyncMask=0
+multiCameraSWFrameSyncInterval=5
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+enableExposureTimeMatch=true
+isVideoMimovieSupported=TRUE
+MfnrDynamicFrameEnable=0
+isVideoBeautifierSupported=TRUE
+SupportedAlgoEngineHdr=1
+VideoHdrMode=2
+disableFocusIndication=1
+overrideFlashTorchCurrent=500
+overrideFlashlightCurrent=130
+overrideTorchCurrent=130
+overrideFrontVideoFlashCurrent=130
+overrideFrontSnapFlashCurrent=130
+is3rdLightWeightSupported=TRUE
+enableGPURotation=TRUE
+
+#uesd by satZoomSpeed static metadata
+satZoomButton=0.6:1:2:5:10|0.6:1:2:5:6
+satZoomTime=719|1000
+
+#Add for Video Mode
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@60
+iseispreviewSupported=TRUE
+is60fpseisSupported=TRUE
+isVideoLogformatSupported=TRUE
+isVideoBeautyEISSupported=TRUE
+#input size only maxsize for cts
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+
+#close camera log
+logInfoMask=0
+overrideLogLevels=0x1
+logWarningMask=0
+logConfigMask=0
+systemLogEnable=TRUE
+logCoreCfgMask=0
+enableAsciiLogging=0
+logRequestMapping=FALSE
+enableTxtLogging=0
+traceGroupsEnable=0
+enable3ADebugData=FALSE
+enableTuningMetadata=FALSE
+raiserecoverysigabrt=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+enablePerRequestSync=FALSE
+
+#Quickview Function
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F07
+
+#Enable shot2Shutter for zsl capture
+soundTimeWhenAnchor=1
+
+#Mfnr FrameNumber
+MfnrDefaultFrameNumber=5
+MfnrDynamicFrameEnable=1
+
+#Set MaxZoom to 10 to disable ExtendedMaxZoom feature
+extendedMaxZoomRatio=10.0
+isNightYuvReprocSupported=TRUE
+
+#add for beautymakeup
+isBeautyMakeupSupported=TRUE
+
+#uesd by MOFAlignment static metadata
+imageConfHighThreshold =150
+imageConfLowThreshold =100
+minAge =10
+absoluteMotion =1.0
+absoluteMotionThreshold =1.0
+absoluteMotionConfidence =100
+absoluteMotionConfidenceThreshold =100
+manualAlignmentFusionMode =AlignGyroBaseOnly
+
+#MIVI Supernight SE
+MIVIsupernightsupportmask=1
+
+#Enable motion capture
+enableMotionCapture=1
+
+#Enable super buffer in HFR mode
+FPSForHALOutputBufferCombined=240
+
+#enable camera pre init
+isEarlysettingsEnable=0x31
+enableBLMClient=1

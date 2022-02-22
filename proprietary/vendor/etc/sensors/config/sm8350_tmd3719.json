@@ -1,0 +1,243 @@
+{
+  "config":{
+      "hw_platform": ["MTP", "Surf", "VENUS" ],
+      "soc_id": ["321", "341", "415"]
+  },
+  "tmd3719_platform":{
+    "owner": "sns_tmd3719",
+    ".config":{
+      "owner": "sns_tmd3719",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "1",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "89"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".prox":{
+      "owner": "sns_tmd3719",
+      ".fac_cal":{
+        "owner": "sns_tmd3719",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "23924.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "2614.0"
+        }
+      },
+      ".hw_cal":{
+        "owner": "sns_tmd3719",
+        "p_offset":{ "type": "flt", "ver": "0",
+          "data": "60.0"
+        }
+      },
+      ".def_config":{
+        "owner": "sns_tmd3719",
+        "p_time":{ "type": "flt", "ver": "0",
+          "data": "3.0"
+        },
+        "p_pulse_len":{ "type": "flt", "ver": "0",
+          "data": "128.0"
+        },
+        "p_pulse":{ "type": "flt", "ver": "0",
+          "data": "3.0"
+        },
+        "p_gain":{ "type": "flt", "ver": "0",
+          "data": "4.0"
+        },
+        "p_Isink0":{ "type": "flt", "ver": "0",
+          "data": "4.0"
+        },
+        "p_Isink1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_Isink2":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_pers":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_avg":{ "type": "flt", "ver": "0",
+          "data": "3.0"
+        },
+        "p_sync_delay0":{ "type": "flt", "ver": "0",
+          "data": "240.0"
+        },
+        "p_sync_delay1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".als":{
+      "owner": "sns_tmd3719",
+      ".fac_cal":{
+        "owner": "sns_tmd3719",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+         "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      },
+      ".def_config":{
+        "owner": "sns_tmd3719",
+        "display_brightness":{ "type": "flt", "ver": "0",
+          "data": "40"
+        },
+        "a_time":{ "type": "flt", "ver": "0",
+          "data": "512.0"
+        },
+        "a_gain":{ "type": "flt", "ver": "0",
+          "data": "11.0"
+        },
+        "a_pers":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "a_thrs_width":{ "type": "flt", "ver": "0",
+          "data": "10.0"
+        },
+        "lux_target":{ "type": "flt", "ver": "0",
+          "data": "300.0"
+        },
+        "lux_target_error":{ "type": "flt", "ver": "0",
+          "data": "30.0"
+        }
+      },
+      ".boled_config":{
+        "owner": "sns_tmd3719",
+        "alg_key_0":{ "type": "str", "ver": "0",
+          "data": "alg_mgr"
+        },
+        "alg_cfg_0":{ "type": "str", "ver": "0",
+          "data": "alg_key,pldc : bright_lower_th,0 : bright_upper_th,40  : ch,2 : itime_us,1000"
+        },
+        "alg_key_1":{ "type": "str", "ver": "0",
+          "data": "alg_mgr"
+        },
+        "alg_cfg_1":{ "type": "str", "ver": "0",
+          "data": "alg_key,pldc : bright_lower_th,41 : bright_upper_th,89  : ch,2 : itime_us,800"
+        },
+        "alg_key_2":{ "type": "str", "ver": "0",
+          "data": "alg_mgr"
+        },
+        "alg_cfg_2":{ "type": "str", "ver": "0",
+          "data": "alg_key,fca: bright_lower_th,90 : bright_upper_th,255 : ch,4 : itime_us,1087"
+        },
+        "alg_key_3":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_3":{ "type": "str", "ver": "0",
+          "data": "dc_model,<{1.007658e-3,2,3,4},{5,6,7,8},{9,10,11,12}><{10,20,56,72},{257,29038,23432},{2352908,589,3463,34657}>"
+        },
+        "alg_key_4":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_4":{ "type": "str", "ver": "0",
+          "data": "dc_model,<{2.007658e-3,2,3,4},{5,6,7,8},{9,10,11,12}><{10,20,56,72},{257,29038,23432},{2352908,589,3463,34657}>"
+        },
+        "alg_key_5":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_5":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<56,{1.000000e+00,}{1.000000e+00,}{1.000000e+00,}{1.000000e+00,}>"
+        },
+        "alg_key_6":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_6":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<46,{-2.175709e+02,1.309224e+01,-2.627252e-01,1.759910e-03,}{-2.210885e+02,1.330509e+01,-2.670206e-01,1.788809e-03,}{-2.033601e+02,1.223312e+01,-2.454147e-01,1.643627e-03,}{-1.999751e+02,1.202681e+01,-2.412100e-01,1.614866e-03,}>"
+        },
+        "alg_key_7":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_7":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<27,{2.611142e-01,-1.514486e-02,2.649641e-04,}{2.616658e-01,-1.516074e-02,2.646583e-04,}{2.500119e-01,-1.457316e-02,2.565838e-04,}{2.519465e-01,-1.469913e-02,2.548670e-04,}>"
+        },
+        "alg_key_8":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_8":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<56,{2.000000e+00,}{1.000000e+00,}{1.000000e+00,}{1.000000e+00,}>"
+        },
+        "alg_key_9":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_9":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<46,{-3.175709e+02,1.309224e+01,-2.627252e-01,1.759910e-03,}{-2.210885e+02,1.330509e+01,-2.670206e-01,1.788809e-03,}{-2.033601e+02,1.223312e+01,-2.454147e-01,1.643627e-03,}{-1.999751e+02,1.202681e+01,-2.412100e-01,1.614866e-03,}>"
+        },
+        "alg_key_10":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_10":{ "type": "str", "ver": "0",
+          "data": "pwm_model,<27,{4.611142e-01,-1.514486e-02,2.649641e-04,}{2.616658e-01,-1.516074e-02,2.646583e-04,}{2.500119e-01,-1.457316e-02,2.565838e-04,}{2.519465e-01,-1.469913e-02,2.548670e-04,}>"
+        },
+        "alg_key_11":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_11":{ "type": "str", "ver": "0",
+          "data": "dc_cal,{1111.460270,222.046477,333.829835,444.261994,},{55.396151,66.615078,77.949337,88.171548,}"
+        },
+        "alg_key_12":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_12":{ "type": "str", "ver": "0",
+          "data": "dc_cal,{2111.460270,222.046477,333.829835,444.261994,},{55.396151,66.615078,77.949337,88.171548,}"
+        },
+        "alg_key_13":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_13":{ "type": "str", "ver": "0",
+          "data": "pwm_cal,{1043.460270,573.046477,352.829835,177.261994,},{34.396151,18.615078,11.949337,6.171548,}"
+        },
+        "alg_key_14":{ "type": "str", "ver": "0",
+          "data": "fca"
+        },
+        "alg_cfg_14":{ "type": "str", "ver": "0",
+          "data": "pwm_cal,{1111.460270,222.046477,333.829835,444.261994,},{55.396151,66.615078,77.949337,88.171548,}"
+        }
+      }
+    }
+  }
+}
